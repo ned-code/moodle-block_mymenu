@@ -1,0 +1,44 @@
+/* CSS Document */
+
+
+div.webfx-tree-item a.selectedTopicWeek {
+	background: #888888;
+	color: black;
+}
+
+.webfx-tree-container {
+	margin: 0px;
+	padding: 0px;
+	white-space: nowrap;
+}
+
+.webfx-tree-item {
+	padding: 2px;
+	margin: 4px;
+	white-space: nowrap;
+	height: 14px;
+}
+
+.webfx-tree-item a, .webfx-tree-item a:active, .webfx-tree-item a:hover, .webfx-tree-item a:visited {
+	margin-left: 3px;
+	padding: 0px 2px 1px 2px;
+}
+
+.webfx-tree-item img {
+	vertical-align: middle;
+    height: 16px;
+    width: 16px;
+	border: 0px;
+}
+
+.webfx-tree-icon {
+}
+
+.fnmymenu-course {
+    font-size: 80%;
+}
+
+.fnmymenu-coursesel {
+    background-color: yellow;
+    font-size: 80%;
+}
