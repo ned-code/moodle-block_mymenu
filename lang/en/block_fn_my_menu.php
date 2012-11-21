@@ -49,6 +49,7 @@ $string['assignroles'] = 'Assign Roles';
 $string['groupsite'] = 'Group Site';
 $string['messages'] = 'my Messenger';
 $string['mycourses'] = 'my Courses';
+$string['mygrade'] = 'my Grade';
 $string['chapter'] = 'Chapter';
 $string['chapters'] = 'Chapters';
 $string['numberofchapter'] = 'Number of chapters';

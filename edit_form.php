@@ -46,6 +46,7 @@ class block_fn_my_menu_edit_form extends block_edit_form {
         $mform->addElement('select', 'config_messages', get_string('messages', 'block_fn_my_menu'), $options);
         $mform->addElement('select', 'config_profile', get_string('profile', 'block_fn_my_menu'), $options);
         $mform->addElement('select', 'config_blogmenu', get_string('blogmenu', 'block_fn_my_menu'), $options);
+        $mform->addElement('select', 'config_mygrade', get_string('mygrade', 'block_fn_my_menu'), $options);
         
 /*        
 $this->config->mycourses; mycourses show hide

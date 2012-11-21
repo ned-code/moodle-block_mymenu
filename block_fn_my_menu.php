@@ -25,20 +25,16 @@ class block_fn_my_menu extends block_base {
             $CFG->block_fn_my_menu_blogmenudef = 1;
         }
 
-        if (!isset($CFG->block_fn_my_menu_myfilesdef)) {
-            $CFG->block_fn_my_menu_myfilesdef = 0;
+        if (!isset($CFG->block_fn_my_menu_mygradedef)) {
+            $CFG->block_fn_my_menu_mygradedef = 1;
         }
         if (!isset($CFG->block_fn_my_menu_id0)) {
             $CFG->block_fn_my_menu_id0 = 'mycourses';
             $CFG->block_fn_my_menu_id1 = 'messages';
             $CFG->block_fn_my_menu_id2 = 'profile';
             $CFG->block_fn_my_menu_id3 = 'blogmenu';
-            $CFG->block_fn_my_menu_id4 = 'myfiles';
-        }
-        if (!isset($CFG->block_fn_my_menu_maxbytes)) {
-            $CFG->block_fn_my_menu_maxbytes = get_max_upload_file_size($CFG->maxbytes);
-        }
-        
+            $CFG->block_fn_my_menu_id4 = 'mygrade';
+        }        
     }     
     
     
@@ -247,6 +243,30 @@ class block_fn_my_menu extends block_base {
                                                             'link' => $CFG->wwwroot.'/blog/index.php?userid='.$USER->id.'&courseid=1',
                                                             'icon' => $reldir.'blocks/fn_my_menu/icons/blog.gif',
                                                             'expandedIcon' => $reldir.'blocks/fn_my_menu/icons/blog.gif',
+                                                            'cssClass' => $cssclass, 'width' => 16, 'height' => 16)));
+                }
+            }
+            
+            if ($id[$i] == "mygrade") {
+                if (!empty($this->config->mygrade) && $this->config->mygrade=="show") {
+                    
+                    foreach ($courses as $key => $value) {
+                        $myfirstcourseid = $key;
+                        break;
+                    }
+                    
+                    if($this->course->id > 1){
+                        $mygradelink = $CFG->wwwroot.'/grade/report/user/index.php?id='.$this->course->id.'&userid='.$USER->id;
+                    }elseif (sizeof($courses)){
+                        $mygradelink = $CFG->wwwroot.'/grade/report/overview/index.php?id='.$myfirstcourseid;
+                    }else{
+                        $mygradelink = $CFG->wwwroot;
+                    }
+                    
+                    $mnode->addItem(new HTML_TreeNode(array('text' => ' '.get_string('mygrade', 'block_fn_my_menu'),
+                                                            'link' => $mygradelink,
+                                                            'icon' => $reldir.'blocks/fn_my_menu/icons/grades.png',
+                                                            'expandedIcon' => $reldir.'blocks/fn_my_menu/icons/grades.png',
                                                             'cssClass' => $cssclass, 'width' => 16, 'height' => 16)));
                 }
             }

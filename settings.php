@@ -10,5 +10,6 @@ if ($ADMIN->fulltree) {
     $settings->add(new admin_setting_configselect('block_fn_my_menu_messagesdef', get_string('messages', 'block_fn_my_menu'), '', 'all', $options));
     $settings->add(new admin_setting_configselect('block_fn_my_menu_profiledef', get_string('profile', 'block_fn_my_menu'), '', 'all', $options));
     $settings->add(new admin_setting_configselect('block_fn_my_menu_blogmenudef', get_string('blogmenu', 'block_fn_my_menu'), '', 'all', $options));
+    $settings->add(new admin_setting_configselect('block_fn_my_menu_mygradedef', get_string('mygrade', 'block_fn_my_menu'), '', 'all', $options));
 
 }
