@@ -19,9 +19,9 @@
  * Keeps track of the version number
  *
  * @package    block
- * @subpackage ajax_marking
- * @copyright  2010 Matt Gibson
- * @author     Matt Gibson {@link http://moodle.org/user/view.php?id=81450}
+ * @subpackage fn_my_menu
+ * @copyright  2006 K-Net
+ * @author     Fernando Oliveira 
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
