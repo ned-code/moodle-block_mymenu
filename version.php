@@ -19,14 +19,11 @@
  * Keeps track of the version number
  *
  * @package    block
- * @subpackage fn_my_menu
- * @copyright  2006 K-Net
- * @author     Fernando Oliveira 
+ * @subpackage ajax_marking
+ * @copyright  2010 Matt Gibson
+ * @author     Matt Gibson {@link http://moodle.org/user/view.php?id=81450}
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$plugin->version = 2012062500;
-$plugin->requires = 2012062500; // 2.3.
-$plugin->maturity = MATURITY_STABLE;
-$plugin->component = 'block_fn_my_menu';
-$plugin->release = '2.3.2';
+$plugin->version = 2012110907;
+$plugin->requires = 2012120300.00; // 2.4 (Build: 20121203)
