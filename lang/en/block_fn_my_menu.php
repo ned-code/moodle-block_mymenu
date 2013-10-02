@@ -71,6 +71,6 @@ $string['change'] = 'Change';
 $string['fngroupsitecourseid'] = 'Course ID for this Group Site:';
 $string['fngroupsitename'] = 'Name of Group Site (blank = course name):';
 $string['fngroupsitesettings'] = 'Group Site settings (my Menu block):';
-
+$string['fn_my_menu:addinstance'] = 'Add instance';
+$string['fn_my_menu:viewblock'] = 'View block'
 ?>
-
