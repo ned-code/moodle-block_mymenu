@@ -1,5 +1,4 @@
 <?php
-
 $string['activitybrdesc'] = 'This link will let you copy activities and content from one course you are an instructor of to another.';
 $string['backupdesc'] = 'This link will allow you to make a copy of your course, with or without student data.';
 $string['backup_restore'] = 'Backup and Copy Content';
@@ -71,6 +70,6 @@ $string['change'] = 'Change';
 $string['fngroupsitecourseid'] = 'Course ID for this Group Site:';
 $string['fngroupsitename'] = 'Name of Group Site (blank = course name):';
 $string['fngroupsitesettings'] = 'Group Site settings (my Menu block):';
-
+$string['fn_my_menu:addinstance'] = 'Add instance';
+$string['fn_my_menu:viewblock'] = 'View block'
 ?>
-
